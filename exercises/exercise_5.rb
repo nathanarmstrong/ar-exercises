@@ -7,4 +7,10 @@ require_relative './exercise_4'
 puts "Exercise 5"
 puts "----------"
 
-# Your code goes here ...
+
+@all_stores = Store.count
+@total_revanue = Store.sum(:annual_revenue)
+
+
+
+pp "all #{@all_stores} stores pull in a total revanue of #{@total_revanue}"

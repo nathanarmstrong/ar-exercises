@@ -15,4 +15,4 @@ Store.create(name: 'Yaletown', annual_revenue: 430000, mens_apparel: true, women
 
 @men = Store.where(mens_apparel: true)
 
-pp "there are #{@men.count} stors that cater to men."
+pp "there are #{@men.count} stores that cater to men."
