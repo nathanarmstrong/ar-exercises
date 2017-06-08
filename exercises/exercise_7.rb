@@ -35,8 +35,6 @@ else
 end
 
 @new_store = Store.create(name: @input_name, annual_revenue: @input_revenue, mens_apparel: @sell_man, womens_apparel: @sell_woman)
-@new_store.valid?
-@new_store.errors.messages.each {|message| pp message}
 pp "#{Store.count}"
 
 @created_store = Store.last.name
